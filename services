@@ -5,7 +5,7 @@
 #  For this tutorial the commands are merely a convenience script to run docker or docker-compose
 #
 #  Each services script can be run using either docker-compose (the external tool with the hyphen -) 
-#  or docker compose (the newer version directly bundled with Docker with a space )
+#  or docker-compose (the newer version directly bundled with Docker with a space )
 #
 #  if you start up with the following command:
 #
@@ -16,7 +16,7 @@
 
 set -e
 
-dockerCmd="docker compose"
+dockerCmd="docker-compose"
 if (( $# == 2 )); then
     dockerCmd="docker-compose"
 fi
